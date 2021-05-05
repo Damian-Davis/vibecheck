@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="images/vibecheck.svg" />
+
+
+    <link href="https://cdn.jsdelivr.t/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>Vibe Check</title>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<style>
+#div_chart{
+  height: 750px;
+ width: 1300px;
+
+}
+</style>
+
+  </head>
+  <body class="text-gray-800 antialiased">
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+             >VIBE </a
+          >  <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://github.com/Damian-Davis " target="_blank"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Github</span></a
+              >
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh;"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("images/datapoint.png");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75"
+          ></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="text-white font-semibold text-5xl">
+                  Music will always tell a story.
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+                  This is story about the music itself & how it has evolved over the past decade. From Katy Perry to Chilled out Cows, music changes the times while changing with the times.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="pb-20 bg-gray-300 -mt-24">
+        <div class="container mx-auto px-4">
+
+<!-- Insert Data about Spotify -->
+          <div class="flex flex-wrap">
+            <div class="w-full lg:w-4/12 xl:w-3/12 px-4">
+              <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                <div class="flex-auto p-4">
+                  <div class="flex flex-wrap">
+                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                      <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                         Spotify Traffic
+                      </h5>
+                      <span class="font-semibold text-xl text-blueGray-700">
+                      345 Million
+                      </span>
+                    </div>
+                    <div class="relative w-auto pl-4 flex-initial">
+                      <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-red-500">
+                        <i class="far fa-chart-bar"></i>
+                      </div>
+                    </div>
+                  </div>
+                    <p class="text-sm text-blueGray-400 mt-4">
+                    <span class="text-emerald-500 mr-2">
+                      <i class="fas fa-arrow-up"></i> 25 M
+                    </span>
+                    <span class="whitespace-nowrap">
+                      Since last Quarter
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+              <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                <div class="flex-auto p-4">
+                  <div class="flex flex-wrap">
+                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                      <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                      Spotify  New users
+                      </h5>
+                      <span class="font-semibold text-xl text-blueGray-700">
+                        25 M
+                      </span>
+                    </div>
+                    <div class="relative w-auto pl-4 flex-initial">
+                      <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-orange-500">
+                        <i class="fas fa-chart-pie"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-sm text-blueGray-400 mt-4">
+                    <span class="text-emerald-500 mr-2">
+                      <i class="fas fa-arrow-up"></i> 4 M
+                    </span>
+                    <span class="whitespace-nowrap">
+                      Since Q3
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+              <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                <div class="flex-auto p-4">
+                  <div class="flex flex-wrap">
+                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                      <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                        Spotify Subscriptions
+                      </h5>
+                      <span class="font-semibold text-xl text-blueGray-700">
+                        155 M
+                      </span>
+                    </div>
+                    <div class="relative w-auto pl-4 flex-initial">
+                      <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-pink-500">
+                        <i class="fas fa-users"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-sm text-blueGray-400 mt-4">
+                    <span class="text-orange-500 mr-2">
+                      <i class="fas fa-chart-line"></i> Project 8.29
+                    </span>
+                    <span class="whitespace-nowrap">
+                      By the End of Year
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+              <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+                <div class="flex-auto p-4">
+                  <div class="flex flex-wrap">
+                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                      <h5 class="text-blueGray-400 uppercase font-bold text-xs">
+                      Spotify  Market Share
+                      </h5>
+                      <span class="font-semibold text-xl text-blueGray-700">
+                        32.5%
+                      </span>
+                    </div>
+                    <div class="relative w-auto pl-4 flex-initial">
+                      <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-lightBlue-500">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-sm text-blueGray-400 mt-4">
+                    <span class="text-red-500 mr-2">
+                      <i class="fas fa-arrow-down"></i> 3.9
+                    </span>
+                    <span class="whitespace-nowrap">
+                      Since 2019
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Begin my Data story-->
+
+          <div class="flex flex-wrap items-center mt-32">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
+              >
+                <i class="fas fa-user-friends text-xl"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Data Collection through Spotify
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+              >
+              Data collected by Spotify through its users allows us to see what songs and artist over the past decade have been the most influential
+              </p>
+              <p
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+              >
+                Whats really interesting is that from 2010 to 2011 the number of Dance Songs that were popular barley changed. It increses from from 31 songs to 38 Songs.
+              </p>
+
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-indigo-600"
+              >
+              <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXc6IFF23C9jj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="w-full align-middle rounded-t-lg"></iframe>
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px;"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-indigo-700 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-white">
+                    '10 HITS
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                  This is Spotify Playlist of most popular songs through out the decade
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Insert my Google Charts -->
+
+      <!-- Form 1 begins -->
+      <div class="w-full md:w-8/12 px-4 mr-auto ml-auto">
+
+        <div class="row pt-5">
+              <div class="col-md">
+
+        <form id="form1" name="form1" onchange="drawChart()" >
+
+           <select id="thedropdown">
+           <option value="2010">2010</option>
+           <option value="2011">2011</option>
+           </select>
+
+        </form>
+      </div>
+          </div>
+
+
+
+          <div id="piechart" class="chart"></div>
+
+      <!-- Pargraphs after 1st Chart -->
+
+
+            <div class="col-md-10">
+
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+              >
+              Dance Songs refers to the number of Dance songs for  that year.  BPM stands for Beats per minute and the tempo of the song. DB is for Decibals. The higher the number the louder the song. </p>
+
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+              >Data collected by Spotify through its users allows us to see what songs and artist over the past decade have been the most influential </p>
+            </div>
+
+            <div class="col-md-10">
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+              > Pop or Popularity. This means  that the higher the value the more popular the song is. Engery- The higher the vaule, the more energtic the song.  </p>
+            </div>
+
+            <div class="col-md-10">
+              <p class="font-bold text-gray-800 mt-8"> Most of these number have been divded by ten for better measurments and understanding.The only category that is absolute is Dance Songs. </p>
+            </div>
+          </div>
+
+
+          <!-- End Form 1/ Chart 1 -->
+
+
+          <!-- Form 2 Begins -->
+          <div class="w-full md:w-8/12 px-4 mr-auto ml-auto">
+
+
+          <div class="row pt-5">
+                <div class="col-md">
+          <form id="form2" name="form2" onchange="drawChart2()" >
+
+             <select id="thedropdown2">
+             <option value="2010">2010</option>
+             <option value="2019">2019</option>
+             </select>
+
+          </form>
+        </div>
+            </div>
+
+            <div id="piechart2" class="chart"></div>
+
+            <!-- Pargraphs after 2nd Chart -->
+
+
+
+      <section>
+              <div class="col-md-10">
+                <p
+                  class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+                > One of the Main Differences from 2010 to 2019 is that the number of Dance Songs that were popular are drastically down.  </p>
+              </div>
+
+              <div class="col-md-10">
+                <p
+                  class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+                > A lot of these songs are by the Artist Katy Pery and Justin Bieber. These two artist make up %6 of the popular music in the past decade. </p>
+              </div>
+
+              <div class="col-md-10">
+                <p
+                  class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+                >There is 584 different songs over the past decade that were considered popular. 35 of them where by Perry and Bieber. Maroon 5 is next in line with 15 songs over the past decade to become popular. </p>
+              </div>
+
+
+          </div>
+        </section>
+
+      <!-- End Form 2 -->
+
+
+
+      <!-- Start Lofi Section -->
+      <section class="relative py-20">
+
+
+
+  <!-- Lofi Playlist-->
+
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-600"
+              >
+
+              <iframe src="https://open.spotify.com/embed/playlist/0CFuMybe6s77w6QQrJjW7d" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="w-full align-middle rounded-t-lg"></iframe>
+
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px;"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-red-700 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-white">
+                    L0-Fi Bops
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                  Towards the End of the Decade L0-Fi was pushing +3M monthly listners and +9M monthly streams.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div class="md:pr-12">
+                <div
+                  class="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-300"
+                >
+                  <i class="fas fa-chart-line text-xl"></i>
+                </div>
+                <h3 class="text-3xl font-semibold">A growing Genre</h3>
+                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                  Lo-Fi is used to refer to a breed of underground indie rock groups that started recording their music at home using four-track machines. This music is made using simple machines and is Low-Fidelty music. Built with less.
+                </p>
+
+
+                <!-- HTML 5 ICON
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                          ><i class="fas fa-fingerprint"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">
+                          Carefully crafted components
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                          ><i class="fab fa-html5"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Amazing page examples</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                          ><i class="far fa-paper-plane"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Dynamic components</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+
+
+
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold">Top Three Competitors</h2>
+              <p class="text-lg leading-relaxed m-4 text-gray-600">
+              The First two, Katy Perry & Justin Biber, are pulled from the spotify data API and the Lo-Fi is not the next top genre. It is my decsion to compare this genre with other popular genres.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+<div class="flex flex-wrap justify-center text-center mb-0">
+        <div class="row pt-5">
+              <div class="col-md">
+                <form id="form3" name="form3" onchange="drawChart3()" >
+
+                   <select id="thedropdown3">
+                   <option value="Katy Perry">Katy Perry</option>
+                   <option value="Justin Bieber">Justin Bieber</option>
+                   <option value="Wun Two"> Wun Two </option>
+                   </select>
+
+                </form>
+      </div>
+          </div>
+
+
+<div id="div_chart" class="chart"></div>
+</div>
+
+<section class="pt-20 pb-48">
+<div class="w-full md:w-8/12  px-24 mr-auto ml-auto">
+      <div class="w-full md:w-11/12 px-4 mr-auto ml-auto">
+        <div class="col-md-12">
+
+          <p
+            class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+          >
+          We See that both main artist are just barley surpassing their competitors. Its important to note, that Justin biber was not more popular at the start of this data investigation. Justin Bibers popularity has gone up since his new album was just relased on March 19, 2021. </p>
+
+          <p
+            class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+          >Katy Perrys popularity has dropped because she hasnt realeased any music since August 28th, 2020. With her previous album realsed in 2017, she just in not producing enough music to have a steady flow of listeners.</p>
+          <p
+            class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+          >Even though Lo-Fi has become more and more popular throuh out the last decade, the genre still isnt hitting popularity numbers with genres such as pop. The reason for this is that Lo-Fi is not main stream music and is not consumed by as much people. Lo-fi genre statics are hitting big numbers, more on that in a minute, but are growing on smaller scales compared to other artist. </p>
+
+          <div class="col-md-10 ">
+             <img src="images/tomppabeats.png" >
+             <p
+               class="text-lg text-center font-light leading-relaxed mt-4 mb-4 text-gray-500"
+             > Tomppabeats’ streaming statistics. October 2018. Data provided by Spotify for Artists. </p>
+
+          </div>
+
+          <p
+            class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+          >In 2018, Lo-fi Producer Tomppabeats, has seen a major increase in his music’s consumption and following since noting in about a 250% increase in total listeners, 13% in monthly streams, and a 96% increase in total followers on Spotify since 2017. </p>
+          <p
+            class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+          >Even with the 96% increase in total followers, Tomppabeats has only with a popularity of 62. This data shows that Lo-Fi is increasing in popularity but nowhere close to pop & dance genres. Will Lo-Fi keep its track record and slowly rise to the top or was it just trendy?   </p>
+
+
+        <div class="my-8 ...">
+          <div class="col-md-10">
+              <h2 class="text-4xl text-center font-semibold">Interactive Mario Lo-Fi Mix Tape</h2>
+              <a href="https://youtu.be/qudVblarL_g" target="_blank">
+             <img src="images/mariomix.jpg" >
+             	</a>
+             <p
+               class="text-lg text-center font-light leading-relaxed mt-4 mb-4 text-gray-400"
+             > This is a AR component that will allow the user to scan this image and have and more interactive playlist.<span style="text-decoration: underline"> Click the picture above to watch the video.</span>  The video shows what the user will experience. This was built using Reailty Composer & Figma. Here is the <a href="https://open.spotify.com/album/2XzBBWt0KemRLREfA74kIG?si=CRLkd_aGQ9-DNoCXfPJW5Q"target="_blank"> <span style="font-weight: bold">Spotify Playlist. </span> </a> </p>
+           </div>
+
+           <div class="col-md-10">
+
+            </div>
+</div>
+
+        </div>
+      </div>
+      </div>
+      </section>
+
+
+
+
+
+      <section class="pb-20 relative block bg-gray-900">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-white">Damian Davis</h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                I am a Mass Communication and Digital Media Innovation senior and soon-to-be graduate from Texas State University. This is a data project using the Spotify API. & was created while in the School of Mass Communicaiton and Journalism's Coding and Data Skills for Journalists class.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative block py-24 lg:pt-0 bg-gray-900">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+            <div class="w-full lg:w-6/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+              >
+                <img src="images/damian.jpg" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Find me on any of these platforms
+            </h5>
+
+
+              <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                <li class="flex items-center">
+                  <a
+                    class="bg-white text-gray-900 shadow-lg font-normal h-12 w-15 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                    href="https://github.com/Damian-Davis " target="_blank"
+                    ><i
+                      class="lg:text-gray-900 text-gray-900 fab fa-github text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Github</span></a
+                  >
+                </li>
+
+                <li class="flex items-center">
+                  <a
+                    class="bg-white text-blue-600 shadow-lg font-normal h-12 w-15 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                    type="button"
+                    href="https://instagram.com/damiandavis_/ " target="_blank"
+                    ><i
+                      class="lg:text-blue-600 text-blue-600 fab fa-instagram text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Instagram</span></a
+                  >
+                </li>
+
+                <li class="flex items-center">
+                  <a
+                    class="bg-white text-pink-400 shadow-lg font-normal h-12 w-15 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                    href="https://www.linkedin.com/in/damian-davis-538b90205" target="_blank"
+                    ><i
+                      class="lg:text-pink-400 text-pink-400 fab fa-linkedin text-lg leading-lg "
+                    ></i
+                    ><span class="lg:hidden inline-block ml-2">Linkedin</span></a
+                  >
+                </li>
+
+              </ul>
+
+          </div>
+
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2021 Vibe Check by
+              <a
+                href="https://www.creative-tim.com"
+                class="text-gray-600 hover:text-gray-900"
+                >Damian Davis</a
+              >.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- Javascript Begins-->
+
+   <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawChart2);
+      google.charts.setOnLoadCallback(drawChart3);
+
+// JS for Chart 1
+    function drawChart() {
+     mygender = document.getElementById("thedropdown").value;
+
+     info = [{year: "2010", tgc:31, bpm: 381, db: 152, pop: 201, energy: 239},
+     {year: "2011", tgc: 38, bpm: 448, db: 191, pop:226, energy: 286}
+     ];
+
+
+    for(i=0; i<info.length; i++) {
+    if(mygender == info[i].year) {
+       tgc = info[i].tgc;
+       bpm = info[i].bpm;
+       db = info[i].db;
+       pop = info[i].pop;
+       energy = info[i].energy;
+
+    }// end if
+    } // end for
+
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Value per Song',{ role: 'style' }],
+      ['Dance Songs',     tgc,'stroke-color: #575f5d; stroke-width: 4; fill-color: #afc1bd; fill opacity: 0.2'],
+      ['BPM',      bpm, 'stroke-color: #8ba9ff; stroke-width: 4; fill-color: #d3eeff; fill-opacity: 0.2'],
+      ['DB',  db,'stroke-color: #7cccfe; stroke-width: 4; fill-color: #d9e3ff; fill-opacity: 0.2'],
+      ['Pop', pop, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF; fill-opacity: 0.2'],
+      ['Energy',    energy, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 4; fill-color: #BC5679; fill-opacity: 0.2']
+        ]);
+        var options = {
+          title: 'Musical Summary',
+          legend: {position: 'none'},
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+
+//  End JS for 1st Chart
+
+// JS for 2nd Chart
+      function drawChart2() {
+       mygender = document.getElementById("thedropdown2").value;
+
+       info = [{year: "2010", tgc:31, bpm: 381, db: 152, pop: 201, energy: 239},
+       {year: "2019", tgc: 7, bpm: 77, db: 41, pop:56, energy: 47}
+       ];
+
+
+      for(i=0; i<info.length; i++) {
+      if(mygender == info[i].year) {
+         tgc = info[i].tgc;
+         bpm = info[i].bpm;
+         db = info[i].db;
+         pop = info[i].pop;
+         energy = info[i].energy;
+
+      }// end if
+      } // end for
+
+      var data = google.visualization.arrayToDataTable([
+            ['Genre', 'Value per Song',{ role: 'style' }],
+            ['Dance Songs',     tgc,'stroke-color: #575f5d; stroke-width: 4; fill-color: #afc1bd; fill opacity: 0.2' ],
+            ['BPM',      bpm, 'stroke-color: #8ba9ff; stroke-width: 4; fill-color: #d3eeff; fill-opacity: 0.2'],
+            ['DB',  db,'stroke-color: #7cccfe; stroke-width: 4; fill-color: #d3eeff; fill-opacity: 0.2'],
+            ['Pop', pop, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
+            ['Energy',    energy, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 4; fill-color: #BC5679; fill-opacity: 0.2']
+          ]);
+          var options = {
+            title: 'Musical Summary',
+            legend: {position: 'none'},
+          };
+          var chart = new google.visualization.ColumnChart(document.getElementById('piechart2'));
+          chart.draw(data, options);
+        }
+//  End JS for 2nd Chart
+
+//  Start JS for 3rd Chart
+function drawChart3() {
+
+info = [
+  {
+  Related: "Katy Perry",
+  Artist: "Katy Perry",
+  Popularity: 87,
+  Genre: "dance pop",
+  colo:"#ddaaff"
+  },
+{
+Related: "Katy Perry",
+Artist: "Avril Lavigne",
+Popularity: 80,
+Genre: "canadian pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Britney Spears",
+Popularity: 85,
+Genre: "dance pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Cher Lloyd",
+Popularity: 67,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "Demi Lovato",
+Popularity: 89,
+Genre: "dance pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Fergie",
+Popularity: 74,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "Fifth Harmony",
+Popularity: 75,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "Glee Cast",
+Popularity: 79,
+Genre: "glee club",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Gwen Stefani",
+Popularity: 78,
+"Genre": "dance pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Hannah Montana",
+Popularity: 69,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "Hilary Duff",
+Popularity: 60,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "Jessie J",
+Popularity: 76,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "Jonas Brothers",
+Popularity: 80,
+Genre: "boy band",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Jordin Sparks",
+Popularity: 67,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "Kelly Clarkson",
+Popularity: 78,
+Genre: "dance pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Kesha",
+Popularity: 81,
+Genre: "dance pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Miley Cyrus",
+Popularity: 88,
+Genre: "dance pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Natasha Bedingfield",
+Popularity: 70,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "P!nk",
+Popularity: 86,
+Genre: "dance pop",
+colo:"#45234f"
+},
+{
+Related: "Katy Perry",
+Artist: "Selena Gomez",
+Popularity: 71,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+{
+Related: "Katy Perry",
+Artist: "The Pussycat Dolls",
+Popularity: 74,
+Genre: "dance pop",
+colo:"#633d6f"
+},
+// end Katy Perry Data
+// Begin Justin Bieber Data
+{
+Related: "Justin Bieber",
+Artist: "Justin Bieber",
+Popularity: 100,
+Genre: "canadian pop",
+colo:"#b6ffaa"
+},
+{
+Related: "Justin Bieber",
+Artist: "Alessia Cara",
+Popularity: 81,
+Genre: "alt z",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Ariana Grande",
+Popularity: 95,
+Genre: "pop",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "Bazzi",
+Popularity: 80,
+Genre: "dance pop",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Camila Cabello",
+Popularity: 85,
+Genre: "dance pop",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "Demi Lovato",
+Popularity: 89,
+Genre: "dance pop",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "Fifth Harmony",
+Popularity: 75,
+Genre: "dance pop",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Hailee Steinfeld",
+Popularity: 78,
+Genre: "dance pop",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Jonas Brothers",
+Popularity: 80,
+Genre: "boy band",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Julia Michaels",
+Popularity: 82,
+Genre: "alt z",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "Khalid",
+Popularity: 92,
+Genre: "alternative r&b",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "Liam Payne",
+Popularity: 75,
+Genre: "dance pop",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Niall Horan",
+Popularity: 82,
+Genre: "dance pop",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "Nick Jonas",
+Popularity: 76,
+Genre: "dance pop",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "PRETTYMUCH",
+Popularity: 69,
+Genre: "alt z",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Ruel",
+Popularity: 75,
+Genre: "alt z",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Selena Gomez",
+Popularity: 89,
+Genre: "dance pop",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "Shawn Mendes",
+Popularity: 89,
+Genre: "canadian pop",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "The Vamps",
+Popularity: 76,
+Genre: "boy band",
+colo:"#3d6f50"
+},
+{
+Related: "Justin Bieber",
+Artist: "Zara Larsson",
+Popularity: 82,
+Genre: "dance pop",
+colo:"#234f30"
+},
+{
+Related: "Justin Bieber",
+Artist: "ZAYN",
+Popularity: 84,
+Genre: "dance pop",
+colo:"#234f30"
+},
+//End Justin Biber Data
+//Wun Two+Lo-Fi Data
+{
+Related: "Wun Two",
+Artist: "Wun Two",
+Popularity:63,
+Genre: "Lo-Fi",
+colo:"#fd6a6a"
+},
+{
+Related: "Wun Two",
+Artist: "The Deli",
+Popularity:62,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Flughand",
+Popularity:59,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "mt.fujitive",
+Popularity:58,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "WYS",
+Popularity:68,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "LoFi Waiter",
+Popularity:69,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Elijah Who",
+Popularity:64,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Kina",
+Popularity:77,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "itssvd",
+Popularity:68,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Jinsang",
+Popularity:65,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Nohidea",
+Popularity:63,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Otaku",
+Popularity:62,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Otaku",
+Popularity:62,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "Sleepy Tom",
+Popularity:56,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "Tomppabeats",
+Popularity:62,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "Joey Pecoraro",
+Popularity:62,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "Dylan Sitts",
+Popularity:57,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "mommy",
+Popularity:59,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "Kudasaibeats",
+Popularity:61,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+{
+Related: "Wun Two",
+Artist: "Sarcastic Sounds",
+Popularity:73,
+Genre: "Lo-Fi",
+colo:"#ab2310"
+},
+{
+Related: "Wun Two",
+Artist: "Hanz",
+Popularity:50,
+Genre: "Lo-Fi",
+colo:"#9c4b4b"
+},
+];
+
+myartist = document.getElementById("thedropdown3").value;
+console.log(myartist);
+ title = myartist + " Related Artists";
+newData = [['Artist', "Popularity",{ role: 'style' } ]];
+for(i=0; i<info.length; i++) {
+if(myartist == info[i].Related) {
+
+  newData.push([(info[i].Artist + " - " + info[i].Genre) , info[i].Popularity,info[i].colo ]);
+
+}// end if
+} // end for
+
+   var data = google.visualization.arrayToDataTable(newData);
+data.sort([{column: 1, desc: true,}]);
+  var options = {
+      title: title,
+      vAxis: {minValue: 0, maxValue: 100},
+     legend: {position: 'none'},
+  };
+
+  var chart = new google.visualization.BarChart(document.getElementById('div_chart'));
+
+  chart.draw(data, options);
+}
+// end JS for Chart 3
+
+
+
+    // this function makes the chart responsive; include the name of the proper drawChart function; if more than one chart on page, include additional statements for each drawChart function
+    window.onresize = function() {
+    drawChart();
+    drawChart2();
+    drawChart3();
+    }
+    </script>
+
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+  </body>
+</html>
